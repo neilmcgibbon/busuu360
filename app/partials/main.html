@@ -1,0 +1,20 @@
+<h1 id="appTitle">
+	<img src="/app/img/360_logo.png" alt="Busuu 360 logo">
+</h1>
+
+<div id="map">
+	<div id="mapCanvas" class="container"></div>
+</div>
+
+<div id="footer">
+	<div class="container">
+		<div class="eventBox" 
+		ng-repeat="event in eventsTypeList" 
+		ng-style="event.style">
+
+			<div class="darkLayer">
+				{{ event.description }}
+			</div>
+		</div>
+	</div>
+</div>
